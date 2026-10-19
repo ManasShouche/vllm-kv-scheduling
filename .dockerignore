@@ -1,0 +1,11 @@
+.git
+.venv
+evidence
+results
+workloads
+research
+__pycache__
+*.zip
+*.tar.gz
+.env
+.aws

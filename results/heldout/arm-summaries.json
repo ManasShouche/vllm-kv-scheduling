@@ -1,0 +1,572 @@
+{
+  "202-evict_cost": {
+    "summary": {
+      "labels": {
+        "policy": "evict_cost",
+        "capacity": "constrained",
+        "seed": 202
+      },
+      "complete": true,
+      "record_count": 45,
+      "phases": {
+        "short_output": {
+          "arrivals": 24,
+          "completed": 24,
+          "status_counts": {
+            "ok": 24
+          },
+          "slo_attainment_all_arrivals": 0.9166666666666666,
+          "slo_passing_requests": 22,
+          "cohort_slo_passes_per_offered_second": 0.04888888888888889,
+          "window_completed_requests_per_s": 0.05555555555555555,
+          "cohort_completion_tokens": 1536,
+          "ttft_p50_s": 1.1443640935000303,
+          "ttft_p95_s": 2.3313776406999964,
+          "ttft_p99_s": 2.5146780291800903,
+          "request_max_event_gap_p50_s": 0.01738199499993698,
+          "request_max_event_gap_p99_s": 0.14665393287016285,
+          "completed_after_arrival_phase": 0,
+          "p99_expected_tail_samples": 0.24,
+          "quality_flags": [
+            "sparse_p99_exploratory_only"
+          ],
+          "kv_usage_peak_fraction": 0.7058823529411764,
+          "kv_usage_sample_count": 477,
+          "kv_samples_at_or_above_90pct_fraction": 0.0,
+          "preemption_delta_between_in_phase_samples": 0.0,
+          "pressure_semantics": "Scrape-sampled KV fraction; 90% is a descriptive threshold. Counter delta omits unsampled boundaries.",
+          "waiting_queue_slope_per_s": 2.0438479609306883e-05
+        },
+        "long_output": {
+          "arrivals": 20,
+          "completed": 20,
+          "status_counts": {
+            "ok": 20
+          },
+          "slo_attainment_all_arrivals": 0.45,
+          "slo_passing_requests": 9,
+          "cohort_slo_passes_per_offered_second": 0.01875,
+          "window_completed_requests_per_s": 0.041666666666666664,
+          "cohort_completion_tokens": 40960,
+          "ttft_p50_s": 2.2650764980000986,
+          "ttft_p95_s": 32.91799491895003,
+          "ttft_p99_s": 35.66580414778997,
+          "request_max_event_gap_p50_s": 0.09163552500001515,
+          "request_max_event_gap_p99_s": 6.7666258764298854,
+          "completed_after_arrival_phase": 0,
+          "p99_expected_tail_samples": 0.2,
+          "quality_flags": [
+            "sparse_p99_exploratory_only"
+          ],
+          "kv_usage_peak_fraction": 0.9989004947773502,
+          "kv_usage_sample_count": 477,
+          "kv_samples_at_or_above_90pct_fraction": 0.09853249475890985,
+          "preemption_delta_between_in_phase_samples": 1.0,
+          "pressure_semantics": "Scrape-sampled KV fraction; 90% is a descriptive threshold. Counter delta omits unsampled boundaries.",
+          "waiting_queue_slope_per_s": -0.0006166686262023588
+        }
+      },
+      "quality_flags": [],
+      "uncertainty": "Per-seed descriptive statistics only; no confidence intervals",
+      "metric_semantics": "SSE nonempty text event gaps, not token ITL",
+      "dispatch_lag_p99_s": 0.002397070819303056,
+      "metrics_discovered": [
+        "kv_usage",
+        "preemptions",
+        "running",
+        "waiting"
+      ],
+      "preemption_delta": 1.0,
+      "completed_output_tokens_per_drain_inclusive_s": 45.69456615264359
+    },
+    "activation": {
+      "policy": "evict_cost",
+      "activation_verified": true,
+      "pressure_branch_observed": true,
+      "comparison_ready": true
+    },
+    "trace_summary": {
+      "ready": true,
+      "preemptions": 1,
+      "all_requests_mapped": true,
+      "complete_client_lifecycles": true,
+      "censored_requests": []
+    },
+    "recomputed_positions": 2737
+  },
+  "201-fixed_512": {
+    "summary": {
+      "labels": {
+        "policy": "fixed_512",
+        "capacity": "constrained",
+        "seed": 201
+      },
+      "complete": true,
+      "record_count": 55,
+      "phases": {
+        "short_output": {
+          "arrivals": 28,
+          "completed": 28,
+          "status_counts": {
+            "ok": 28
+          },
+          "slo_attainment_all_arrivals": 1.0,
+          "slo_passing_requests": 28,
+          "cohort_slo_passes_per_offered_second": 0.06222222222222222,
+          "window_completed_requests_per_s": 0.06222222222222222,
+          "cohort_completion_tokens": 1792,
+          "ttft_p50_s": 1.1415470155000094,
+          "ttft_p95_s": 1.8770015850499249,
+          "ttft_p99_s": 1.8776404480200608,
+          "request_max_event_gap_p50_s": 0.017193125999938275,
+          "request_max_event_gap_p99_s": 0.08850553317020968,
+          "completed_after_arrival_phase": 0,
+          "p99_expected_tail_samples": 0.28,
+          "quality_flags": [
+            "sparse_p99_exploratory_only"
+          ],
+          "kv_usage_peak_fraction": 0.7064321055525014,
+          "kv_usage_sample_count": 478,
+          "kv_samples_at_or_above_90pct_fraction": 0.0,
+          "preemption_delta_between_in_phase_samples": 0.0,
+          "pressure_semantics": "Scrape-sampled KV fraction; 90% is a descriptive threshold. Counter delta omits unsampled boundaries.",
+          "waiting_queue_slope_per_s": -1.4741919053811407e-05
+        },
+        "long_output": {
+          "arrivals": 23,
+          "completed": 23,
+          "status_counts": {
+            "ok": 23
+          },
+          "slo_attainment_all_arrivals": 0.391304347826087,
+          "slo_passing_requests": 9,
+          "cohort_slo_passes_per_offered_second": 0.01875,
+          "window_completed_requests_per_s": 0.03958333333333333,
+          "cohort_completion_tokens": 47104,
+          "ttft_p50_s": 3.0000981690000117,
+          "ttft_p95_s": 41.72846084549996,
+          "ttft_p99_s": 45.12048729231994,
+          "request_max_event_gap_p50_s": 0.09232587799988323,
+          "request_max_event_gap_p99_s": 17.063237361320134,
+          "completed_after_arrival_phase": 4,
+          "p99_expected_tail_samples": 0.23,
+          "quality_flags": [
+            "sparse_p99_exploratory_only"
+          ],
+          "kv_usage_peak_fraction": 0.9967014843320505,
+          "kv_usage_sample_count": 476,
+          "kv_samples_at_or_above_90pct_fraction": 0.1869747899159664,
+          "preemption_delta_between_in_phase_samples": 1.0,
+          "pressure_semantics": "Scrape-sampled KV fraction; 90% is a descriptive threshold. Counter delta omits unsampled boundaries.",
+          "waiting_queue_slope_per_s": 0.003481613815363164
+        }
+      },
+      "quality_flags": [],
+      "uncertainty": "Per-seed descriptive statistics only; no confidence intervals",
+      "metric_semantics": "SSE nonempty text event gaps, not token ITL",
+      "dispatch_lag_p99_s": 0.0024548874011225057,
+      "metrics_discovered": [
+        "kv_usage",
+        "preemptions",
+        "running",
+        "waiting"
+      ],
+      "preemption_delta": 1.0,
+      "completed_output_tokens_per_drain_inclusive_s": 49.87571471761359
+    },
+    "activation": {
+      "policy": "fixed_512",
+      "activation_verified": true,
+      "pressure_branch_observed": false,
+      "comparison_ready": true
+    },
+    "trace_summary": {
+      "ready": true,
+      "preemptions": 1,
+      "all_requests_mapped": true,
+      "complete_client_lifecycles": true,
+      "censored_requests": []
+    },
+    "recomputed_positions": 12877
+  },
+  "201-evict_cost": {
+    "summary": {
+      "labels": {
+        "policy": "evict_cost",
+        "capacity": "constrained",
+        "seed": 201
+      },
+      "complete": true,
+      "record_count": 55,
+      "phases": {
+        "short_output": {
+          "arrivals": 28,
+          "completed": 28,
+          "status_counts": {
+            "ok": 28
+          },
+          "slo_attainment_all_arrivals": 1.0,
+          "slo_passing_requests": 28,
+          "cohort_slo_passes_per_offered_second": 0.06222222222222222,
+          "window_completed_requests_per_s": 0.06222222222222222,
+          "cohort_completion_tokens": 1792,
+          "ttft_p50_s": 1.1411716109998906,
+          "ttft_p95_s": 1.8759442403500088,
+          "ttft_p99_s": 1.8775033261500311,
+          "request_max_event_gap_p50_s": 0.017364436499974545,
+          "request_max_event_gap_p99_s": 0.08843406272984339,
+          "completed_after_arrival_phase": 0,
+          "p99_expected_tail_samples": 0.28,
+          "quality_flags": [
+            "sparse_p99_exploratory_only"
+          ],
+          "kv_usage_peak_fraction": 0.7064321055525014,
+          "kv_usage_sample_count": 478,
+          "kv_samples_at_or_above_90pct_fraction": 0.0,
+          "preemption_delta_between_in_phase_samples": 0.0,
+          "pressure_semantics": "Scrape-sampled KV fraction; 90% is a descriptive threshold. Counter delta omits unsampled boundaries.",
+          "waiting_queue_slope_per_s": -1.4744207909927411e-05
+        },
+        "long_output": {
+          "arrivals": 23,
+          "completed": 23,
+          "status_counts": {
+            "ok": 23
+          },
+          "slo_attainment_all_arrivals": 0.43478260869565216,
+          "slo_passing_requests": 10,
+          "cohort_slo_passes_per_offered_second": 0.020833333333333332,
+          "window_completed_requests_per_s": 0.03958333333333333,
+          "cohort_completion_tokens": 47104,
+          "ttft_p50_s": 3.000206213000183,
+          "ttft_p95_s": 41.759719944400324,
+          "ttft_p99_s": 45.151600628239905,
+          "request_max_event_gap_p50_s": 0.09239403100036725,
+          "request_max_event_gap_p99_s": 16.660708761639814,
+          "completed_after_arrival_phase": 4,
+          "p99_expected_tail_samples": 0.23,
+          "quality_flags": [
+            "sparse_p99_exploratory_only"
+          ],
+          "kv_usage_peak_fraction": 0.9961517317207257,
+          "kv_usage_sample_count": 476,
+          "kv_samples_at_or_above_90pct_fraction": 0.226890756302521,
+          "preemption_delta_between_in_phase_samples": 1.0,
+          "pressure_semantics": "Scrape-sampled KV fraction; 90% is a descriptive threshold. Counter delta omits unsampled boundaries.",
+          "waiting_queue_slope_per_s": 0.0034513720937881073
+        }
+      },
+      "quality_flags": [],
+      "uncertainty": "Per-seed descriptive statistics only; no confidence intervals",
+      "metric_semantics": "SSE nonempty text event gaps, not token ITL",
+      "dispatch_lag_p99_s": 0.0020060127147201,
+      "metrics_discovered": [
+        "kv_usage",
+        "preemptions",
+        "running",
+        "waiting"
+      ],
+      "preemption_delta": 1.0,
+      "completed_output_tokens_per_drain_inclusive_s": 49.877480460171185
+    },
+    "activation": {
+      "policy": "evict_cost",
+      "activation_verified": true,
+      "pressure_branch_observed": true,
+      "comparison_ready": true
+    },
+    "trace_summary": {
+      "ready": true,
+      "preemptions": 1,
+      "all_requests_mapped": true,
+      "complete_client_lifecycles": true,
+      "censored_requests": []
+    },
+    "recomputed_positions": 2988
+  },
+  "203-evict_cost": {
+    "summary": {
+      "labels": {
+        "policy": "evict_cost",
+        "capacity": "constrained",
+        "seed": 203
+      },
+      "complete": true,
+      "record_count": 55,
+      "phases": {
+        "short_output": {
+          "arrivals": 24,
+          "completed": 24,
+          "status_counts": {
+            "ok": 24
+          },
+          "slo_attainment_all_arrivals": 1.0,
+          "slo_passing_requests": 24,
+          "cohort_slo_passes_per_offered_second": 0.05333333333333334,
+          "window_completed_requests_per_s": 0.051111111111111114,
+          "cohort_completion_tokens": 1536,
+          "ttft_p50_s": 1.1439985424999577,
+          "ttft_p95_s": 1.875921227699473,
+          "ttft_p99_s": 1.8768024533098195,
+          "request_max_event_gap_p50_s": 0.01744315199994162,
+          "request_max_event_gap_p99_s": 0.07825322558032895,
+          "completed_after_arrival_phase": 1,
+          "p99_expected_tail_samples": 0.24,
+          "quality_flags": [
+            "sparse_p99_exploratory_only"
+          ],
+          "kv_usage_peak_fraction": 0.4238592633315008,
+          "kv_usage_sample_count": 478,
+          "kv_samples_at_or_above_90pct_fraction": 0.0,
+          "preemption_delta_between_in_phase_samples": 0.0,
+          "pressure_semantics": "Scrape-sampled KV fraction; 90% is a descriptive threshold. Counter delta omits unsampled boundaries.",
+          "waiting_queue_slope_per_s": 0.0
+        },
+        "long_output": {
+          "arrivals": 30,
+          "completed": 30,
+          "status_counts": {
+            "ok": 30
+          },
+          "slo_attainment_all_arrivals": 0.5333333333333333,
+          "slo_passing_requests": 16,
+          "cohort_slo_passes_per_offered_second": 0.03333333333333333,
+          "window_completed_requests_per_s": 0.05416666666666667,
+          "cohort_completion_tokens": 61440,
+          "ttft_p50_s": 1.9963560749997669,
+          "ttft_p95_s": 29.712315197600034,
+          "ttft_p99_s": 46.03445449391008,
+          "request_max_event_gap_p50_s": 0.09720738599980905,
+          "request_max_event_gap_p99_s": 10.413906804050043,
+          "completed_after_arrival_phase": 5,
+          "p99_expected_tail_samples": 0.3,
+          "quality_flags": [
+            "sparse_p99_exploratory_only"
+          ],
+          "kv_usage_peak_fraction": 0.9989004947773502,
+          "kv_usage_sample_count": 476,
+          "kv_samples_at_or_above_90pct_fraction": 0.17016806722689076,
+          "preemption_delta_between_in_phase_samples": 4.0,
+          "pressure_semantics": "Scrape-sampled KV fraction; 90% is a descriptive threshold. Counter delta omits unsampled boundaries.",
+          "waiting_queue_slope_per_s": 0.0031830023775742617
+        }
+      },
+      "quality_flags": [],
+      "uncertainty": "Per-seed descriptive statistics only; no confidence intervals",
+      "metric_semantics": "SSE nonempty text event gaps, not token ITL",
+      "dispatch_lag_p99_s": 0.0020298282833255145,
+      "metrics_discovered": [
+        "kv_usage",
+        "preemptions",
+        "running",
+        "waiting"
+      ],
+      "preemption_delta": 4.0,
+      "completed_output_tokens_per_drain_inclusive_s": 63.95717740186869
+    },
+    "activation": {
+      "policy": "evict_cost",
+      "activation_verified": true,
+      "pressure_branch_observed": false,
+      "comparison_ready": false
+    },
+    "trace_summary": {
+      "ready": true,
+      "preemptions": 4,
+      "all_requests_mapped": true,
+      "complete_client_lifecycles": true,
+      "censored_requests": []
+    },
+    "recomputed_positions": 19232
+  },
+  "203-fixed_512": {
+    "summary": {
+      "labels": {
+        "policy": "fixed_512",
+        "capacity": "constrained",
+        "seed": 203
+      },
+      "complete": true,
+      "record_count": 55,
+      "phases": {
+        "short_output": {
+          "arrivals": 24,
+          "completed": 24,
+          "status_counts": {
+            "ok": 24
+          },
+          "slo_attainment_all_arrivals": 1.0,
+          "slo_passing_requests": 24,
+          "cohort_slo_passes_per_offered_second": 0.05333333333333334,
+          "window_completed_requests_per_s": 0.051111111111111114,
+          "cohort_completion_tokens": 1536,
+          "ttft_p50_s": 1.142182952999974,
+          "ttft_p95_s": 1.8764234777000184,
+          "ttft_p99_s": 1.8777616819798733,
+          "request_max_event_gap_p50_s": 0.01743703749980341,
+          "request_max_event_gap_p99_s": 0.07757162511989918,
+          "completed_after_arrival_phase": 1,
+          "p99_expected_tail_samples": 0.24,
+          "quality_flags": [
+            "sparse_p99_exploratory_only"
+          ],
+          "kv_usage_peak_fraction": 0.4238592633315008,
+          "kv_usage_sample_count": 478,
+          "kv_samples_at_or_above_90pct_fraction": 0.0,
+          "preemption_delta_between_in_phase_samples": 0.0,
+          "pressure_semantics": "Scrape-sampled KV fraction; 90% is a descriptive threshold. Counter delta omits unsampled boundaries.",
+          "waiting_queue_slope_per_s": 0.0
+        },
+        "long_output": {
+          "arrivals": 30,
+          "completed": 30,
+          "status_counts": {
+            "ok": 30
+          },
+          "slo_attainment_all_arrivals": 0.5333333333333333,
+          "slo_passing_requests": 16,
+          "cohort_slo_passes_per_offered_second": 0.03333333333333333,
+          "window_completed_requests_per_s": 0.05416666666666667,
+          "cohort_completion_tokens": 61440,
+          "ttft_p50_s": 1.997333407500264,
+          "ttft_p95_s": 29.860795895050114,
+          "ttft_p99_s": 46.164494551489796,
+          "request_max_event_gap_p50_s": 0.09723545049973836,
+          "request_max_event_gap_p99_s": 10.430554733319628,
+          "completed_after_arrival_phase": 5,
+          "p99_expected_tail_samples": 0.3,
+          "quality_flags": [
+            "sparse_p99_exploratory_only"
+          ],
+          "kv_usage_peak_fraction": 0.999450247388675,
+          "kv_usage_sample_count": 476,
+          "kv_samples_at_or_above_90pct_fraction": 0.17647058823529413,
+          "preemption_delta_between_in_phase_samples": 4.0,
+          "pressure_semantics": "Scrape-sampled KV fraction; 90% is a descriptive threshold. Counter delta omits unsampled boundaries.",
+          "waiting_queue_slope_per_s": 0.0032212144652133037
+        }
+      },
+      "quality_flags": [],
+      "uncertainty": "Per-seed descriptive statistics only; no confidence intervals",
+      "metric_semantics": "SSE nonempty text event gaps, not token ITL",
+      "dispatch_lag_p99_s": 0.0019513890304062899,
+      "metrics_discovered": [
+        "kv_usage",
+        "preemptions",
+        "running",
+        "waiting"
+      ],
+      "preemption_delta": 4.0,
+      "completed_output_tokens_per_drain_inclusive_s": 63.941057655001465
+    },
+    "activation": {
+      "policy": "fixed_512",
+      "activation_verified": true,
+      "pressure_branch_observed": false,
+      "comparison_ready": true
+    },
+    "trace_summary": {
+      "ready": true,
+      "preemptions": 4,
+      "all_requests_mapped": true,
+      "complete_client_lifecycles": true,
+      "censored_requests": []
+    },
+    "recomputed_positions": 19233
+  },
+  "202-fixed_512": {
+    "summary": {
+      "labels": {
+        "policy": "fixed_512",
+        "capacity": "constrained",
+        "seed": 202
+      },
+      "complete": true,
+      "record_count": 45,
+      "phases": {
+        "short_output": {
+          "arrivals": 24,
+          "completed": 24,
+          "status_counts": {
+            "ok": 24
+          },
+          "slo_attainment_all_arrivals": 0.9166666666666666,
+          "slo_passing_requests": 22,
+          "cohort_slo_passes_per_offered_second": 0.04888888888888889,
+          "window_completed_requests_per_s": 0.05555555555555555,
+          "cohort_completion_tokens": 1536,
+          "ttft_p50_s": 1.1441402250002284,
+          "ttft_p95_s": 2.3340487987005862,
+          "ttft_p99_s": 2.5115173364602015,
+          "request_max_event_gap_p50_s": 0.01737314250021882,
+          "request_max_event_gap_p99_s": 0.14411588793958796,
+          "completed_after_arrival_phase": 0,
+          "p99_expected_tail_samples": 0.24,
+          "quality_flags": [
+            "sparse_p99_exploratory_only"
+          ],
+          "kv_usage_peak_fraction": 0.7075316107751513,
+          "kv_usage_sample_count": 478,
+          "kv_samples_at_or_above_90pct_fraction": 0.0,
+          "preemption_delta_between_in_phase_samples": 0.0,
+          "pressure_semantics": "Scrape-sampled KV fraction; 90% is a descriptive threshold. Counter delta omits unsampled boundaries.",
+          "waiting_queue_slope_per_s": 0.0
+        },
+        "long_output": {
+          "arrivals": 20,
+          "completed": 20,
+          "status_counts": {
+            "ok": 20
+          },
+          "slo_attainment_all_arrivals": 0.4,
+          "slo_passing_requests": 8,
+          "cohort_slo_passes_per_offered_second": 0.016666666666666666,
+          "window_completed_requests_per_s": 0.041666666666666664,
+          "cohort_completion_tokens": 40960,
+          "ttft_p50_s": 2.5654689685002268,
+          "ttft_p95_s": 32.9114605138499,
+          "ttft_p99_s": 35.66000767076996,
+          "request_max_event_gap_p50_s": 0.09035030450058912,
+          "request_max_event_gap_p99_s": 7.354526485730128,
+          "completed_after_arrival_phase": 0,
+          "p99_expected_tail_samples": 0.2,
+          "quality_flags": [
+            "sparse_p99_exploratory_only"
+          ],
+          "kv_usage_peak_fraction": 0.9967014843320505,
+          "kv_usage_sample_count": 476,
+          "kv_samples_at_or_above_90pct_fraction": 0.06932773109243698,
+          "preemption_delta_between_in_phase_samples": 1.0,
+          "pressure_semantics": "Scrape-sampled KV fraction; 90% is a descriptive threshold. Counter delta omits unsampled boundaries.",
+          "waiting_queue_slope_per_s": -0.0006418192212444142
+        }
+      },
+      "quality_flags": [],
+      "uncertainty": "Per-seed descriptive statistics only; no confidence intervals",
+      "metric_semantics": "SSE nonempty text event gaps, not token ITL",
+      "dispatch_lag_p99_s": 0.0019878587804782913,
+      "metrics_discovered": [
+        "kv_usage",
+        "preemptions",
+        "running",
+        "waiting"
+      ],
+      "preemption_delta": 1.0,
+      "completed_output_tokens_per_drain_inclusive_s": 45.6945523364463
+    },
+    "activation": {
+      "policy": "fixed_512",
+      "activation_verified": true,
+      "pressure_branch_observed": false,
+      "comparison_ready": true
+    },
+    "trace_summary": {
+      "ready": true,
+      "preemptions": 1,
+      "all_requests_mapped": true,
+      "complete_client_lifecycles": true,
+      "censored_requests": []
+    },
+    "recomputed_positions": 8740
+  }
+}

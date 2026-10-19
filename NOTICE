@@ -1,0 +1,8 @@
+KV Pressure Lab
+
+Includes the unmodified P-PAS scheduler patch by Timo Sämann and contributors,
+from https://github.com/TimoSaemann/ppas-vllm at the commit in
+vendor/provenance.json. Its Apache-2.0 license is retained in vendor/PPAS-LICENSE.
+The patch modifies vLLM, an external Apache-2.0 project; vLLM and model weights
+are not distributed here. Additional experimental extensions are separate
+scripts. This project is not affiliated with or endorsed by either upstream.

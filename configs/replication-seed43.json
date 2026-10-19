@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "max_model_len": 16384,
+  "warmup_s": 30,
+  "burstiness": 1.0,
+  "seeds": [
+    43
+  ],
+  "phases": [
+    {
+      "name": "short_output",
+      "duration_s": 480,
+      "request_rate": 0.05,
+      "prompt_tokens": 8192,
+      "output_tokens": 64
+    },
+    {
+      "name": "long_output",
+      "duration_s": 480,
+      "request_rate": 0.05,
+      "prompt_tokens": 8192,
+      "output_tokens": 2048
+    }
+  ],
+  "policies": {
+    "fixed_2k": 2048,
+    "fixed_512": 512
+  },
+  "kv_capacities_bytes": {
+    "constrained": 1073741824
+  },
+  "max_num_seqs": 64,
+  "request_timeout_s": 240,
+  "drain_timeout_s": 300,
+  "max_active_requests": 2048,
+  "ttft_slo_s": 2.5,
+  "event_gap_slo_s": 0.1,
+  "dispatch_lag_limit_s": 0.01
+}

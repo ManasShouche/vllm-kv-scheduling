@@ -1,0 +1,40 @@
+{
+  "policy_files": {
+    "lab/eviction.py": "9c7dfba3bc49c22208badb1978a2a7be5ec1d9ea8ca04e11085bd6088303567c",
+    "scripts/extend_eviction.py": "fd5b1492b86f2224b2c850b70d2b643d4a6f7347fb653e78d722e251328cd37b"
+  },
+  "config_sha256": "ad85f43af7fcec409da92fdacdc298a0067669c17ffaab02f87c425cc7917e63",
+  "order": [
+    {
+      "policy": "evict_cost",
+      "capacity": "constrained",
+      "seed": 202
+    },
+    {
+      "policy": "fixed_512",
+      "capacity": "constrained",
+      "seed": 201
+    },
+    {
+      "policy": "evict_cost",
+      "capacity": "constrained",
+      "seed": 201
+    },
+    {
+      "policy": "evict_cost",
+      "capacity": "constrained",
+      "seed": 203
+    },
+    {
+      "policy": "fixed_512",
+      "capacity": "constrained",
+      "seed": 203
+    },
+    {
+      "policy": "fixed_512",
+      "capacity": "constrained",
+      "seed": 202
+    }
+  ],
+  "retuning_allowed": false
+}

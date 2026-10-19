@@ -1,0 +1,8 @@
+{
+  "repository": "https://github.com/TimoSaemann/ppas-vllm",
+  "commit": "f36197dddf485653f7eb8c89be96fd2d2ebca2a2",
+  "patch_path": "scheduler/ppas_vllm_0.22.1.patch",
+  "patch_sha256": "97e881e6c92f322a82fd892fc197aa16dff98b1135ecd14fefe7955a85588b87",
+  "vllm_version": "0.22.1",
+  "modified": false
+}
